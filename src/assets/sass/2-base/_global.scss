@@ -1,0 +1,31 @@
+html {
+  color: $color-dark1;
+  line-height: 1.2;
+}
+
+body {
+  position: relative;
+}
+
+.section {
+  &__header {
+    text-align: center;
+    width: 45%;
+
+    h3 {
+      color: $color-primary;
+    }
+  }
+}
+
+.go-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  z-index: 3;
+  img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+  }
+}

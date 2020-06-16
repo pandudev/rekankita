@@ -1,0 +1,19 @@
+// breakpoints min width
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap");
+
+$poppins: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+// colors
+$color-primary: #ffa500;
+$color-accent: #ffff02;
+$color-light1: #fefefe;
+$color-light2: #e0e0e0;
+$color-dark1: #2c3844;
+$color-dark2: #485b6f;

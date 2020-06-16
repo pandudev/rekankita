@@ -1,0 +1,125 @@
+.fitur {
+  &__header {
+    h2 {
+      color: $color-dark1;
+    }
+  }
+
+  &__content {
+    p:first-of-type() {
+      font-weight: 600;
+    }
+  }
+}
+
+.manfaat {
+  background-image: url("./../img/bg-laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-dark1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__header {
+    color: $color-light1;
+  }
+
+  &__content {
+    color: $color-light2;
+
+    img {
+      height: 90px;
+    }
+  }
+}
+
+.tutorial {
+  &__content {
+    iframe {
+      width: 100%;
+      height: 250px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.cta {
+  background-color: $color-primary;
+  position: relative;
+
+  h1 {
+    color: $color-light1;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    right: 0;
+  }
+}
+
+.pricing {
+  &__box {
+    height: 850px;
+    background-color: $color-light1;
+    box-shadow: 0px 0px 14px 0px rgba(219, 219, 219, 1);
+    padding: 3rem 1rem;
+
+    h1 {
+      color: $color-primary;
+    }
+
+    &:nth-child(2) {
+      background-color: $color-primary;
+      box-shadow: none;
+      height: calc(850px + 2rem);
+      padding: 4rem 1rem;
+      color: $color-light1;
+
+      h2 {
+        color: $color-dark1;
+      }
+
+      h1 {
+        color: $color-light1;
+      }
+    }
+
+    p {
+      align-self: flex-start;
+    }
+  }
+}
+
+.testimonial {
+  background-color: $color-light2;
+
+  &__content {
+    &__box {
+      flex-basis: 30%;
+      background-color: $color-dark1;
+      color: $color-light1;
+      text-align: center;
+    }
+  }
+}

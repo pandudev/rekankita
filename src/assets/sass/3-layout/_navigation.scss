@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+
+  li {
+    &:not(nth-last-child()) {
+      margin-right: 2rem;
+    }
+
+    a {
+      color: $color-light1;
+      text-transform: uppercase;
+
+      &.active {
+        color: $color-accent;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &--footer {
+    flex-direction: column;
+
+    li {
+      a {
+        color: $color-light1;
+
+        &:hover {
+          color: $color-dark1;
+        }
+      }
+      &:not(:last-of-type()) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

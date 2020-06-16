@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-dark2;
+
+  &__brand {
+    img {
+      margin-right: 1rem;
+    }
+
+    h3 {
+      color: $color-primary;
+
+      span {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__social {
+    img {
+      width: 30px;
+    }
+  }
+
+  p {
+    color: $color-light1;
+  }
+
+  &__copyright {
+    background-color: $color-dark1;
+  }
+}

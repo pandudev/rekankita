@@ -1,0 +1,78 @@
+.header {
+  z-index: 1;
+  position: relative;
+
+  &__wrapper {
+    min-height: 100vh;
+    background-image: url("./../img/bg-community.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      opacity: 0.8;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $color-dark1;
+    }
+  }
+
+  .navbar {
+    height: 80px;
+    position: relative;
+    z-index: 2;
+
+    &__brand {
+      img {
+        margin-right: 1rem;
+      }
+
+      h3 {
+        color: $color-primary;
+
+        span {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+
+  .hero {
+    z-index: 3;
+    color: $color-light1;
+
+    .btn {
+      margin-top: 2rem;
+    }
+
+    &__thumbnail {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3 !important;
+
+      &--laptop {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        img {
+          height: 400px;
+        }
+      }
+
+      &--phone {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        img {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

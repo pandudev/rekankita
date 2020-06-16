@@ -1,0 +1,33 @@
+.btn {
+  padding: 20px 40px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-light1;
+
+    &:hover {
+      background-color: $color-dark1;
+    }
+  }
+
+  &--dark {
+    background-color: $color-dark1;
+    color: $color-light1;
+  }
+
+  &--light {
+    background-color: $color-light1;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-dark1;
+      color: $color-light1;
+    }
+  }
+
+  &--icon {
+    padding: 10px;
+  }
+}
