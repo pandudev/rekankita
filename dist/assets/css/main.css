@@ -3240,13 +3240,13 @@ h4 {
       .header .hero__thumbnail--laptop {
         position: absolute;
         right: 1rem;
-        bottom: 1rem; }
+        bottom: 3rem; }
         .header .hero__thumbnail--laptop img {
           height: 400px; }
       .header .hero__thumbnail--phone {
         position: absolute;
         right: 1rem;
-        bottom: 1rem; }
+        bottom: 4rem; }
         .header .hero__thumbnail--phone img {
           height: 200px; }
 
