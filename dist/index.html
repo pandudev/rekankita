@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <header id="header" class="header">
+    <header id="header" class="header d-md-flex flex-md-column">
       <div class="header__wrapper d-flex flex-column">
         <nav
           class="navbar container d-flex justify-content-between align-items-center"
@@ -16,19 +16,37 @@
             <img src="./assets/img/logo-small.png" alt="logo" />
             <h3>REKAN<span>KITA</span></h3>
           </a>
-          <ul class="nav">
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="#fitur">Fitur</a></li>
-            <li><a href="#tutorial">Tutorial</a></li>
-            <li><a href="#testimonial">Testimoni</a></li>
+          <ul class="nav d-flex">
+            <li>
+              <a
+                href="./index.html"
+                class="active scroll-click d-none d-md-block"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#fitur" class="scroll-click d-none d-md-block">Fitur</a>
+            </li>
+            <li>
+              <a href="#tutorial" class="scroll-click d-none d-md-block"
+                >Tutorial</a
+              >
+            </li>
+            <li>
+              <a href="#testimonial" class="scroll-click d-none d-md-block"
+                >Testimoni</a
+              >
+            </li>
             <li><a href="./blog.html">Blog</a></li>
           </ul>
         </nav>
-        <section class="hero container flex-fill d-flex align-items-center">
+        <section
+          class="hero container py-5 py-lg-0 flex-fill d-flex align-items-center"
+        >
           <div class="hero__wrapper row">
-            <div class="hero__intro col-md-6">
+            <div class="hero__intro col-md-8 col-lg-6">
               <h1>PLATFORM INFORMASI DAN JUAL BELI USAHA DALAM KOMUNITAS</h1>
-              <h4>
+              <h4 class="my-3">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
                 vitae eius fugiat animi odit. Asperiores eaque soluta earum
                 distinctio, debitis atque vel cum itaque quis quia voluptatum
@@ -39,7 +57,7 @@
           </div>
         </section>
       </div>
-      <div class="hero__thumbnail">
+      <div class="hero__thumbnail d-none d-md-block">
         <div class="hero__thumbnail--laptop">
           <img src="./assets/img/img-product-dektop.png" alt="" />
         </div>
@@ -57,7 +75,9 @@
             <h2>BERAGAM FITUR UNTUK MENGELOLA USAHA ANDA</h2>
           </div>
           <div class="fitur__content row">
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-5 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-community-90x90.png"
                 alt="Komunitas"
@@ -69,7 +89,9 @@
                 sosial.
               </p>
             </div>
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-5 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-upload-90x90.png"
                 alt="Upload"
@@ -82,7 +104,9 @@
                 timeline.
               </p>
             </div>
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-5 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-update-90x90.png"
                 alt="Update"
@@ -95,7 +119,9 @@
                 akan menjadi etalase toko kita.
               </p>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4 mb-5 mb-md-0 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-notification-90x90.png"
                 alt="Notifikasi"
@@ -108,7 +134,9 @@
                 membuka aplikasi, akan dapat pemberitahuan di whatsapp.
               </p>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4 mb-5 mb-md-0 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-share-90x90.png"
                 alt="Share"
@@ -121,7 +149,9 @@
                 seperti WhatsApp atau Facebook.
               </p>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4 mb-5 mb-md-0 d-flex flex-column align-items-center d-md-block"
+            >
               <img
                 src="./assets/img/icon-payment-90x90.png"
                 alt="Payment"
@@ -138,7 +168,7 @@
           </div>
         </div>
       </section>
-      <section id="manfaat" class="manfaat section">
+      <section id="manfaat" class="manfaat section show-gotop">
         <div class="container py-5">
           <div class="manfaat__header section__header mx-auto mb-5">
             <h3>MANFAAT</h3>
@@ -151,11 +181,13 @@
             </p>
           </div>
           <div class="manfaat__content row">
-            <div class="col-md-6 mb-5 d-flex align-items-start">
+            <div
+              class="col-md-6 mb-5 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+            >
               <img
                 src="./assets/img/icon-marketing-100x100.png"
                 alt="Marketing"
-                class="mr-5"
+                class="mb-3 mb-lg-0 mr-md-5"
               />
               <div class="manfaat__content__text">
                 <h4 class="mb-3">
@@ -168,11 +200,13 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 mb-5 d-flex align-items-start">
+            <div
+              class="col-md-6 mb-5 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+            >
               <img
                 src="./assets/img/icon-ecommerce-100x100.png"
                 alt="ecommerce"
-                class="mr-5"
+                class="mb-3 mb-lg-0 mr-md-5"
               />
               <div class="manfaat__content__text">
                 <h4 class="mb-3">
@@ -184,11 +218,13 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-start">
+            <div
+              class="col-md-6 mb-5 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+            >
               <img
                 src="./assets/img/icon-team-100x100.png"
                 alt="Team"
-                class="mr-5"
+                class="mb-3 mb-lg-0 mr-md-5"
               />
               <div class="manfaat__content__text">
                 <h4 class="mb-3">
@@ -201,11 +237,13 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-start">
+            <div
+              class="col-md-6 mb-5 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+            >
               <img
                 src="./assets/img/icon-devices-100x100.png"
                 alt="Device"
-                class="mr-5"
+                class="mb-3 mb-lg-0 mr-md-5"
               />
               <div class="manfaat__content__text">
                 <h4 class="mb-3">
@@ -228,7 +266,7 @@
             <h2>CARA MENGGUNAKAN REKANKITA</h2>
           </div>
           <div class="tutorial__content row">
-            <div class="col-md-6 mb-5">
+            <div class="col-lg-6 mb-5">
               <iframe
                 class="mb-3"
                 src="https://www.youtube.com/embed/XmZ7vl7ISpA"
@@ -236,7 +274,7 @@
               </iframe>
               <p>Kata pengantar tentang gambaran konsep rekankita</p>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-lg-6 mb-5">
               <iframe
                 class="mb-3"
                 src="https://www.youtube.com/embed/QR7OvVJV2YM"
@@ -244,7 +282,7 @@
               </iframe>
               <p>Tutorial installasi aplikasi rekankita sampai pasang produk</p>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-lg-6 mb-5">
               <iframe
                 class="mb-3"
                 src="https://www.youtube.com/embed/XmZ7vl7ISpA"
@@ -255,7 +293,7 @@
                 pasang produk
               </p>
             </div>
-            <div class="col-md-6 mb-5">
+            <div class="col-lg-6 mb-5">
               <iframe
                 class="mb-3"
                 src="https://www.youtube.com/embed/QR7OvVJV2YM"
@@ -269,7 +307,9 @@
       <section id="cta" class="cta section">
         <div class="container py-5">
           <div class="row">
-            <div class="col-md-9">
+            <div
+              class="col-md-8 col-lg-9 d-flex flex-column align-items-center align-items-md-start"
+            >
               <h1 class="mb-4">
                 DAPATKAN KEMUDAHAN MENGELOLA USAHA ANDA BERSAMA KOMUNITAS,
                 SEKARANG!!
@@ -278,7 +318,11 @@
             </div>
           </div>
         </div>
-        <img src="./assets/img/img-support.png" alt="Support" />
+        <img
+          class="d-none d-md-block"
+          src="./assets/img/img-support.png"
+          alt="Support"
+        />
       </section>
       <section id="pricing" class="pricing section">
         <div class="container py-5">
@@ -286,7 +330,7 @@
             <h3>PRICING</h3>
             <h2>PILIH PAKET MEMBER SESUAI KEBUTUHAN ANDA</h2>
           </div>
-          <div class="pricing__content mx-auto row align-items-center">
+          <div class="pricing__content mx-auto row align-items-lg-center">
             <div
               class="pricing__box col-md-4 d-flex flex-column align-items-center"
             >
@@ -295,13 +339,15 @@
               <p>Menjadi member dan download aplikasi</p>
               <p>Pasang produk</p>
               <p>Membayar fee saat jualan laku saja</p>
-              <a href="#" class="btn btn--primary mt-auto">DAFTAR SEKARANG</a>
+              <a href="#" class="btn btn--primary mt-5 mt-md-auto"
+                >DAFTAR SEKARANG</a
+              >
             </div>
             <div
               class="pricing__box col-md-4 d-flex flex-column align-items-center"
             >
               <h2>BASIC</h2>
-              <h1 class="my-5">10.000.000</h1>
+              <h1 class="my-5">10 JUTA</h1>
               <p>
                 Rilis aplikasi android dengan nama perusahaan sendiri
               </p>
@@ -323,13 +369,15 @@
               <p>
                 Maintenance per transaksi (atau free jika h2h ikut pusat)
               </p>
-              <a href="#" class="btn btn--light mt-auto">DAFTAR SEKARANG</a>
+              <a href="#" class="btn btn--light mt-5 mt-md-auto"
+                >DAFTAR SEKARANG</a
+              >
             </div>
             <div
               class="pricing__box col-md-4 d-flex flex-column align-items-center"
             >
               <h2>PREMIUM</h2>
-              <h1 class="my-5">20.000.000</h1>
+              <h1 class="my-5">20 JUTA</h1>
               <p>Rilis aplikasi Android dengan nama komunitas</p>
               <p>
                 Tersedia domain khusus nama komunitas untuk informasi layanan
@@ -352,16 +400,20 @@
                 Biaya maintenance dihitung per transaksi jual beli dan transaksi
                 ppob. Kecuali penambahan fitur yang signifikan.
               </p>
-              <a href="#" class="btn btn--primary mt-auto">DAFTAR SEKARANG</a>
+              <a href="#" class="btn btn--primary mt-5 mt-md-auto"
+                >DAFTAR SEKARANG</a
+              >
             </div>
           </div>
         </div>
       </section>
       <section id="testimonial" class="testimonial section">
         <div class="container py-5">
-          <div class="testimonial__content d-flex justify-content-between">
+          <div
+            class="testimonial__content d-flex flex-column flex-lg-row justify-content-between"
+          >
             <div
-              class="testimonial__content__box py-5 px-3 d-flex flex-column align-items-center"
+              class="testimonial__content__box py-5 px-3 d-flex flex-column align-items-center mb-3 mb-lg-0"
             >
               <img src="./assets/img/img-quote.png" alt="Quote" />
               <p class="my-4">
@@ -374,7 +426,7 @@
               <h4 class="mt-auto">Anita Rosadi</h4>
             </div>
             <div
-              class="testimonial__content__box py-5 px-3 d-flex flex-column align-items-center"
+              class="testimonial__content__box py-5 px-3 d-flex flex-column align-items-center mb-3 mb-lg-0"
             >
               <img src="./assets/img/img-quote.png" alt="Quote" />
               <p class="my-4">
@@ -402,33 +454,36 @@
       </section>
     </main>
 
-    <div class="go-top">
-      <a href="#header" class="btn btn--icon btn--primary">
+    <div id="goTop" class="go-top scroll-click">
+      <a href="#" class="btn btn--icon btn--primary">
         <img src="./assets/img/icon-back-128x128.png" alt="Go Top" />
       </a>
     </div>
 
     <footer id="footer" class="footer">
       <div class="container py-5">
-        <a href="#" class="footer__brand d-flex align-items-center mb-3">
+        <a
+          href="#"
+          class="footer__brand d-flex align-items-center justify-content-center justify-content-md-start mb-3"
+        >
           <img src="./assets/img/logo-small.png" alt="logo" />
           <h3>REKAN<span>KITA</span></h3>
         </a>
         <div class="row justify-content-between">
-          <p class="col-md-7">
+          <p class="col-md-7 mb-3 mb-md-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
             vitae bibendum dictumst quis at dignissim non. Tempor pulvinar arcu
             at nunc. Ultrices egestas metus mi nunc pellentesque laoreet. Proin
             sapien lacus tempus a lacus, consectetur venenatis pellentesque sit.
           </p>
-          <ul class="nav nav--footer">
+          <ul class="nav nav--footer col-6 col-md-2">
             <li><a href="./index.html">Home</a></li>
             <li><a href="#fitur">Fitur</a></li>
             <li><a href="#tutorial">Tutorial</a></li>
             <li><a href="#testimonial">Testimoni</a></li>
             <li><a href="./blog.html">Blog</a></li>
           </ul>
-          <div class="footer__social">
+          <div class="footer__social col-6 col-md-3">
             <a href="#" class="btn btn--icon btn--dark mr-1">
               <img src="./assets/img/icon-facebook-60x60.png" alt="Facebook" />
             </a>

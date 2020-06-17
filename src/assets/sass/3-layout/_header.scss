@@ -1,15 +1,40 @@
 .header {
   z-index: 1;
   position: relative;
+  overflow-x: hidden;
 
   &__wrapper {
-    min-height: 100vh;
+    min-height: unset;
     background-image: url("./../img/bg-community.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     z-index: 2;
+
+    &--blog {
+      height: 300px;
+      background-image: url("./../img/bg-blog.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      &::after {
+        position: absolute;
+        content: "";
+        opacity: 0.8;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color-dark1;
+      }
+    }
+
+    @include breakpoint(lg) {
+      min-height: 100vh;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -26,6 +51,14 @@
     height: 80px;
     position: relative;
     z-index: 2;
+
+    &--blog {
+      background-color: $color-dark1;
+
+      .container {
+        height: 100%;
+      }
+    }
 
     &__brand {
       img {
@@ -45,6 +78,17 @@
   .hero {
     z-index: 3;
     color: $color-light1;
+    text-align: center;
+
+    &--blog {
+      h1 {
+        text-align: center;
+      }
+    }
+
+    @include breakpoint(md) {
+      text-align: left;
+    }
 
     .btn {
       margin-top: 2rem;
@@ -60,17 +104,37 @@
         position: absolute;
         right: 1rem;
         bottom: 3rem;
+        @include breakpoint(md) {
+          transform: translateX(55%);
+          bottom: 5rem;
+        }
+
+        @include breakpoint(lg) {
+          transform: translateX(0);
+          bottom: 3rem;
+        }
         img {
-          height: 400px;
+          height: 350px;
+          @include breakpoint(lg) {
+            height: 400px;
+          }
         }
       }
 
       &--phone {
         position: absolute;
-        right: 1rem;
-        bottom: 4rem;
+        bottom: 5rem;
+        right: 0;
+        @include breakpoint(lg) {
+          right: 1rem;
+          bottom: 3rem;
+        }
         img {
           height: 200px;
+
+          @include breakpoint(lg) {
+            height: 300px;
+          }
         }
       }
     }
